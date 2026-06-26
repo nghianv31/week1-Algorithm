@@ -1,0 +1,7 @@
+Thuật toán Larry's Array:
+Ý tưởng thuật toán:
+   - Bài toán yêu cầu xác định xem một mảng có thể sắp xếp tăng dần bằng cách xoay các nhóm 3 phần tử liên tiếp hay không.
+   - Phép xoay 3 phần tử (3-element rotation) là một hoán vị chẵn (even permutation), do đó nó luôn bảo toàn tính chẵn/lẻ (parity) của tổng số cặp nghịch thế (inversions) trong mảng.
+   - Mảng đã được sắp xếp hoàn toàn có số nghịch thế là 0 (là số chẵn). 
+   - Vì thế, mảng ban đầu có thể sắp xếp được (YES) nếu và chỉ nếu tổng số cặp nghịch thế ban đầu của nó là một số chẵn. Ngược lại, trả về NO.
+

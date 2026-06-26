@@ -1,0 +1,10 @@
+Thuật toán Encryption:
+ Ý tưởng thuật toán:
+   - Loại bỏ toàn bộ khoảng trắng khỏi chuỗi S ban đầu để có chuỗi chuẩn hóa độ dài L.
+   - Xác định kích thước lưới (số hàng `lower`, số cột `upper`) sao cho:
+     lower = floor(sqrt(L))
+     upper = ceil(sqrt(L))
+     lower * upper >= L và diện tích lower * upper là nhỏ nhất.
+   - Điền chuỗi vào lưới có kích thước vừa tính.
+   - Chuỗi mã hóa thu được bằng cách đọc lưới theo từng cột từ trái sang phải, các cụm từ tương ứng với mỗi cột được ngăn cách bằng khoảng trắng.
+
